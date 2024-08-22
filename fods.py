@@ -67,9 +67,51 @@ print(fahrenheit_array)
 import numpy as np
 array_2d = np.array([[1, 2, 3],
                      [4, 5, 6]])
-transposed_array_2d = array_2d.T
+transposed_array_2d = array_2d.
+
+import numpy as np
+
+# Create a 5-dimensional array with dimensions 2x3x4x5x6
+array_5d = np.zeros((2, 3, 4, 5, 6))
+
+# Verify that the array has 5 dimensions
+print("Array shape:", array_5d.shape)
+print("Number of dimensions:", array_5d.ndim)
 print("Original 2D array:")
 print(array_2d)
 print("Transposed 2D array:")
 print(transposed_array_2d)
+
+import numpy as np
+
+# Create a boolean array
+boolean_array = np.array([True, False, True, False, True, False])
+
+# Sort the boolean array
+sorted_array = np.sort(boolean_array)
+
+print("Original boolean array:", boolean_array)
+print("Sorted boolean array:", sorted_array)
+
+import numpy as np
+
+# Define the arrays
+array1 = np.array([10, 20, 30, 40, 50])
+array2 = np.array([60, 70, 80, 90, 100])
+
+# Combine the last element of array1 and the first element of array2
+combined_array = np.array([array1[-1], array2[0]])
+
+print("Combined array:", combined_array)
+
+import numpy as np
+
+# Define the arrays
+array1 = np.array([10, 20, 30, 40, 50])
+array2 = np.array([30, 50])
+
+# Find indices
+indices = np.where(np.in1d(array1, array2))[0]
+
+print("Indices:", indices)
 
